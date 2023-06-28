@@ -13,3 +13,4 @@ transformers
 scikit-learn
 pyarrow
 streamlit
+pytorch
