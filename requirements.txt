@@ -12,3 +12,4 @@ wordcloud
 transformers
 scikit-learn
 pyarrow
+streamlit
