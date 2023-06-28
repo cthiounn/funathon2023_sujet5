@@ -9,3 +9,6 @@ spacy
 tqdm
 unidecode
 wordcloud
+transformers
+scikit-learn
+pyarrow
