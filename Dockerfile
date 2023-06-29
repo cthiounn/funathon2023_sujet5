@@ -7,9 +7,9 @@ RUN pip install --requirement /tmp/requirements.txt
 
 WORKDIR /app
 # Copy all the files of this project inside the container
-COPY . .
-
 RUN --mount=type=cache,target=/var/cache/ curl -SL https://minio.lab.sspcloud.fr/cthiounn2/ckpt_dares_ceren_bert_multi.pth -o ckpt_dares_ceren_bert_multi.pth 
+
+COPY . .
 
 CMD ["streamlit", "run", "streamlit-api.py","--server.port", "3838"]
 

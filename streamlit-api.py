@@ -8,8 +8,12 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model=model.to(device)
 model.load_state_dict(torch.load("ckpt_dares_ceren_bert_multi.pth", map_location=device))
 
-st.text("Version : 1.0 ")
 
+st.text("Version : 1.0 ")
+st.markdown('# Darespression')
+st.divider()
+st.info('Donnez votre avis et on s''occupe du reste', icon="ℹ️")
+st.divider()
 titre = st.text_input('Titre')
 commentaire = st.text_area('Commentaire')
 
