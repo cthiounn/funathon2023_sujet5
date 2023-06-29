@@ -5,10 +5,10 @@ shiny:
   ingress:
     enabled: true
     hostname: dares-funathon-2023-sujet-5.lab.sspcloud.fr
-#  resources:
-#    requests:
-#      nvidia.com/gpu: 1
-#    limits:
-#      nvidia.com/gpu: 1
+  resources:
+    requests:
+      nvidia.com/gpu: 1
+    limits:
+      nvidia.com/gpu: 1
   probe:
     enabled: false

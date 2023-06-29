@@ -40,6 +40,6 @@ if titre and commentaire :
     
     _, predicted = torch.max(logits, dim=1)
 
-    for _ in range(int(predicted[0])):
-        st.text('♥')
+
+    st.text('Note :' + '♥'*int(predicted[0]))
 
